@@ -1,3 +1,35 @@
-<div>
-	Find Restaurant
+<html>
+<head>
+	<title>Find Restaurant</title>
+
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+	<!-- Bootstrap core CSS -->
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+	<link href="../css/common.css" rel="stylesheet">
+	
+	<script type="text/javascript">
+		function onload() {
+			log(getCurrentLocation());
+		}
+	
+	</script>
+</head>
+<body onload="javascript:onload();">
+
+<h4>Find Restaurant</h4>
+<div class="list-group">
+  <a href="#" class="list-group-item">Hong Kong Island</a>
+  <a href="#" class="list-group-item">Kowloon</a>
+  <a href="#" class="list-group-item">New Territories</a>
 </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript"  src="../js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../js/common.js"></script>
+</body>
+</html>

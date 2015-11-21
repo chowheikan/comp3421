@@ -4,7 +4,16 @@ $(document).ready(function(){
     });
 });
 
-function goto(url) {
+function goto(name, url) {
+	localStorage.setItem("location", name);
 	$('#content').attr('src',url); 
-	return false;
 }
+
+function getCurrentLocation() {
+	return localStorage.getItem("location");
+}
+
+function log(str) {
+	console.log(str);
+}
+
